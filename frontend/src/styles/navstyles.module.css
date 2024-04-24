@@ -1,0 +1,41 @@
+.navi {
+    display: flex;
+    list-style-type: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1.5rem;
+    font-weight: bold;
+}
+
+.navi li {
+    padding: 0.5rem;
+    right: 0;
+    top: 0;
+}
+
+.navi li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navi li:hover {
+    color: #86CB92;
+    cursor: pointer;
+}
+
+@media (min-width: 2560px) {
+    .navi {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 425px) {
+
+    .navi {
+        font-size: 0.8rem;
+        margin-top: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+}

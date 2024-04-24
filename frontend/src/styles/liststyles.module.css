@@ -1,0 +1,287 @@
+.title {
+    margin-top: 4rem;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.modal {
+    background-color: #53687E;
+    width: 15rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 auto;
+    border-radius: 0.2rem;
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1001;
+
+}
+
+.rating {
+    background-color: #53687E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0.5rem;
+}
+
+select {
+    color: #86CB92;
+}
+
+.box {
+    margin-right: 1rem;
+}
+
+.submitbtn {
+    background-color: #86CB92;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+    border-radius: 0.2rem;
+    height: 1.5rem;
+
+}
+
+.submitbtn:active {
+    transform: scale(0.9);
+}
+
+.submitbtn:hover {
+    color: #3A4454
+}
+
+
+.anime {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 3rem;
+    padding-bottom: 4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    justify-items: center;
+}
+
+.inneranime {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #86CB92;
+    background: linear-gradient(to right, #E0BBE4, #957DAD);
+    width: 20rem;
+    height: 30rem;
+    font-size: 0.8rem;
+    padding: 1rem;
+    border-radius: 0.2rem;
+    color: #696969;
+}
+
+h2 {
+    font-size: 1rem;
+}
+
+img {
+    width: 8rem;
+    height: 8rem;
+    margin: 0 auto;
+    object-fit: cover;
+    border-radius: 0.2rem;
+    -webkit-box-shadow: 0px 0px 50px 3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 50px 3px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 50px 3px rgba(0, 0, 0, 0.75);
+}
+
+.synopsis {
+    width: 100%;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+}
+
+.delbtn {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #FF7F7F;
+    border: none;
+    border-radius: 0.2rem;
+    padding: 0.2rem;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+}
+
+.delbtn:active {
+    transform: scale(0.9);
+}
+
+.delbtn:hover {
+    font-weight: bold;
+}
+
+.editbtn {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #957DAD;
+    border: none;
+    border-radius: 0.2rem;
+    padding: 0.2rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+}
+
+.editbtn:active {
+    transform: scale(0.9);
+}
+
+.editbtn:hover {
+    font-weight: bold;
+}
+
+@media (min-width: 2560px) {
+    .title {
+        margin-top: 4rem
+    }
+
+    .anime {
+        margin-top: 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    }
+
+    .img {
+        height: 10rem;
+        width: 10rem;
+    }
+
+    .inneranime {
+        font-size: 1rem;
+        width: 30rem;
+        height: 40rem;
+    }
+
+    .modal {
+        width: 30rem;
+        height: 30rem;
+        font-size: 2rem;
+    }
+
+    select {
+        font-size: 1rem;
+        width: 5rem;
+        height: 3rem;
+        font-size: 1rem;
+        margin-right: 1rem;
+    }
+
+    .box {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .submitbtn {
+        width: 50%;
+        margin: 0 auto;
+        height: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .editbtn {
+        height: 2rem;
+    }
+
+    .delbtn {
+        height: 2rem;
+    }
+
+    img {
+        height: 10rem;
+        width: 10rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (max-width: 1199px) and (min-width: 1025px) {
+    .anime {
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    }
+
+    .inneranime {
+        width: 18rem;
+        height: 30rem;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .anime {
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    }
+
+    img {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .inneranime {
+        width: 15rem;
+        height: 25rem;
+        font-size: 0.6rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .anime {
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    }
+
+    .inneranime {
+        width: 12rem;
+        height: 20rem;
+        font-size: 0.5rem;
+    }
+
+    h2 {
+        font-size: 0.6rem;
+    }
+
+    .editbtn {
+        height: 1rem;
+        font-size: 0.5rem;
+    }
+
+    .delbtn {
+        height: 1rem;
+        font-size: 0.5rem;
+    }
+
+}
+
+@media (max-width: 719px) {
+    .anime {
+        grid-template-columns: 1fr;
+    }
+}
