@@ -30,6 +30,7 @@ const ProtectedRoute = ({children}) => {
         }
     }
 
+
     const auth = async () => {
         const token = localStorage.getItem(ACCESS_TOKEN)
         if (!token) {
@@ -57,3 +58,4 @@ const ProtectedRoute = ({children}) => {
 }
 
 export default ProtectedRoute
+

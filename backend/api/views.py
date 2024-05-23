@@ -34,6 +34,8 @@ class AnimeUpdate(generics.UpdateAPIView):
     serializer_class = AnimeSerializer
     permission_classes = [IsAuthenticated]
     lookup_field = 'id'
+    
+
 
 class CreateUserView(generics.CreateAPIView):
     queryset = User.objects.all()

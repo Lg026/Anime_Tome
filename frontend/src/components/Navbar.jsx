@@ -4,7 +4,7 @@ import { NavLink, useLocation } from 'react-router-dom'
 
 const Navbar = () => {
   const loc = useLocation()
-  let txt, path;
+  let txt, path; 
 
   if (loc.pathname === '/login') {
     txt = 'Register';
