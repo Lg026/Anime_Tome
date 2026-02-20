@@ -1,1 +1,2 @@
-web: gunicorn anime_tome.wsgi
+web: gunicorn backend.wsgi
+
