@@ -161,11 +161,9 @@ CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_CREDENTIALS = True
 
 CORS_ALLOWED_ORIGINS = [
-    "https://lg026.github.io",
-    "https://animetome-production.up.railway.app",
+    "https://lg026.github.io"
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://lg026.github.io",
-    "https://animetome-production.up.railway.app",
+    "https://lg026.github.io"
 ]
