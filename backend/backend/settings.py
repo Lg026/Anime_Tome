@@ -157,13 +157,14 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_ALL_ORIGINS = False
 CORS_ALLOW_CREDENTIALS = True
 
 CORS_ALLOWED_ORIGINS = [
-    "https://lg026.github.io"
+    "https://lg026.github.io",
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://lg026.github.io"
+    "https://lg026.github.io",
 ]
+
